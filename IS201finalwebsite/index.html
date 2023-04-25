@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>video hero</title>
+  <meta name="description">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Urbanist:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="main">
+  <section class="hero">
+    <video autoplay muted loop playsinline poster="images/oceanheroimage.jpg">
+      <source src="assets/nature-31377.mp4" type="video/webm">
+      <source src="assets/nature-31377.mp4" type="video/mp4">
+    </video>
+    <div class="text-content">
+      <h1>An Introduction to My Life</h1>
+      <p>Featuring Emma Bronson</p>
+    </div>
+  </section>
+  <header>
+    <nav>
+      <h2 class="visually-hidden">Main menu</h2>
+      <div class="menu-icon">
+        <svg viewbox="0 0 60 60" width="40px" height="40px">
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        </svg>
+      </div>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="fullscreen">
+      <article class="panel">
+        <div class="text-wrapper left">
+          <div>
+            <h2>A Bit About My Husband and Me</h2>
+            <p>Here is a picture of me and my husband Andrew. He is my favorite human on the planet. We have a lot of fun together because we both have ADHD and are consistenly full of energy. I love spending time with him. 
+            </p>
+            <p>We play with lightsabers, eat tacos and never wake up early. He is awesome. He is really bad at gokarting but we love him anyway.</p>
+          </div>
+          <a class="button">Learn more about us</a>
+        </div>
+        <div class="image-wrapper">
+          <img src="images/andrewandme.JPG" alt="none" loading="lazy" width="500"
+            height="200">
+
+        </div>
+      </article>
+    </div>
+    <div class="fullscreen">
+      <article class="panel">
+      </article>
+    </div>
+  </main>
+  <footer>
+    <p>Cool Footer feature</p>
+  </footer>
+  <script>
+    document.querySelector(".menu-icon").addEventListener("click", function () {
+      this.parentElement.classList.toggle("close");
+    });
+  </script>
+</body>
+
+</html>
